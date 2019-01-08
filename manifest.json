@@ -1,0 +1,22 @@
+{
+	"name": "GitHub Comment Jump",
+	"version": "1.0",
+	"description": "Jump to the most thumbs comment!",
+	"permissions": ["activeTab", "declarativeContent"],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+      "matches": ["https://github.com/*/*"],
+			"js": ["hotkeys.min.js", "content-script.js"],
+			"run_at": "document_end"
+		}
+	],
+	"page_action": {
+		"default_icon": "images/github.png"
+	},
+	"icons": { "16": "images/github.png" },
+	"manifest_version": 2
+}
