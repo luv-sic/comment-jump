@@ -15,8 +15,8 @@
 		}
 	],
 	"page_action": {
-		"default_icon": "images/github.png"
+		"default_icon": "images/github.jpg"
 	},
-	"icons": { "16": "images/github.png" },
+	"icons": { "16": "images/github.jpg" },
 	"manifest_version": 2
 }

@@ -1,2 +1,7 @@
 # comment-jump
-A chrome extension that Jump to the most thumbs comment
+
+> A chrome extension that Jump to the most thumbs issue comment
+
+## Usage
+
+Just press `ctrl/cmd + j`

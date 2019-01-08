@@ -13,11 +13,11 @@ const getThumbComment = (el) => {
 
 const thumbs = Array.from(document.querySelectorAll(THUMBUP_SELECTOR)).filter(el => {
   return el.innerText.trim() === '👍' &&
-  getThumbCount(el) >= 1;
+  getThumbCount(el) > 0;
 }).sort((a, b) => {
   const athunmbCount = getThumbCount(a);
   const bthunmbCount = getThumbCount(b);
-  return athunmbCount > bthunmbCount;
+  return bthunmbCount - athunmbCount;
 })
 
 let index = -1;
@@ -28,7 +28,6 @@ hotkeys('ctrl+j,command+j', function(event,handler) {
     index = 0;
   }
   const current = getThumbComment(thumbs[index]);
-  current.scrollIntoView();
+  current.scrollIntoView({
+  });
 });
-
-console.log('thumbs :', thumbs);
