@@ -1,7 +1,7 @@
 {
 	"name": "GitHub Comment Jump",
 	"version": "1.0",
-	"description": "Jump to the most thumbs comment!",
+	"description": "A chrome extension that Jump to the issue comment that has the most thumbs up",
 	"permissions": ["activeTab", "declarativeContent"],
 	"background": {
 		"scripts": ["background.js"],
